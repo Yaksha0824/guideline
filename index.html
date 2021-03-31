@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+
+	<style>
+
+		ul
+        {
+	        list-style-type:none;
+	        overflow: hidden;
+	        margin:0;
+	        padding:0px;
+        }
+
+        li
+        {   
+        	
+        	float: right;
+        	display: inline;
+        	padding-left: 60px;       
+
+        }
+
+        li a{
+        	text-decoration: none;
+        	color: rgba(32, 35,37, 1);
+        	font-family:Open Sans;
+			font-weight:400;
+			font-size:14px;
+			line-height:64px;
+        }
+
+        li a:hover:not(.active) {
+        color: rgba(238,77,43,1);
+        }
+
+        li a.active {
+        color: rgba(238,77,43,1);
+        }
+
+		.pagewidth {
+			margin:0px auto;
+			width: 1260px;
+		}
+
+		.Contentsection
+		{
+			margin-bottom: 80px;	
+		}
+
+
+		div.sitesection
+		{
+			background: #F8F8F8;
+			padding: 88px;
+			margin: 0px auto;
+			margin-top: 48px;
+			width: 1084px;
+		}
+
+		.sitehead
+		{ 
+			font-family:Shopee Display;
+			font-weight: 800;
+			font-size:60px;
+			line-height:60px;
+			margin: 0px;
+			text-align: center;
+		}
+
+		div.siteline
+		{
+			height:1px;
+			width:100%; 
+			border-top:1px solid #eee;
+			float:left; 
+			margin:24px 0px 24px 0px;
+		}
+
+		div.spline
+		{
+			height:1px;
+			width:100%; 
+			border-top:1px solid #ccc;
+			float:left,bottom; 
+			margin:0px 0px 0px 0px;
+		}
+
+/* 以下是各级文字样式*/
+
+
+		.headline1
+		{ 
+			font-family: resource/Shopee 2021;			
+			font-weight: 600;
+			font-size:60px;
+			line-height:90px;
+			color: rgba(32, 35,37, 1);
+			margin:0px 0px 0px 0px;
+		}
+
+
+		.headline2
+		{ 
+			font-family:resource/Shopee 2021;
+			font-weight: 600;
+			font-size:48px;
+			line-height:60px;
+			color: rgba(32, 35,37, 1);
+			margin:0px 0px 0px 0px;
+		}
+
+		.title1
+		{ 
+			font-family:resource/Shopee 2021;
+			font-weight: 600;
+			font-size:32px;
+			line-height:48px;
+			color: rgba(32, 35,37, 1);
+			margin:0px 0px 0px 0px;
+		}
+
+		.title2
+		{ 
+			font-family:Open Sans;
+			font-weight:600;
+			font-size:22px;
+			line-height:36px;
+			color: rgba(32, 35,37, 1);
+			margin:0px 0px 0px 0px;
+		}
+
+		.contenttitle
+		{ 
+			font-family:Open Sans;
+			font-weight:600;
+			font-size:16px;
+			line-height:28px;
+			color: rgba(32, 35,37, 1);
+			margin:0px 0px 0px 0px;
+		}
+
+		.content
+		{ 
+			font-family:Open Sans;
+			font-weight:400;
+			font-size:16px;
+			line-height:28px;
+			color: rgba(32, 35,37, 0.6);
+			margin:0px 0px 0px 0px;
+		}
+
+		.smalltext
+		{ 
+			font-family:Open Sans;
+			font-weight:400;
+			font-size:14px;
+			line-height:18px;
+			color: rgba(32, 35,37, 0.6);
+			margin:0px 0px 0px 0px;
+		}
+
+		.codetext
+		{ 
+			font-family:Menlo;
+			font-weight:400;
+			font-size:12px;
+			line-height:18px;
+			color: rgba(32, 35,37, 0.6);
+			margin:0px 0px 0px 0px;
+		}
+
+		.banner
+		{   
+			width: 100%;
+			min-width: 1440px;
+			background-position:center;
+            background-size: cover;}
+
+
+
+/* 以下是颜色样式*/
+
+#grad1 {
+	height: 50%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4));
+}
+
+
+.button1 {
+    background-color: rgba(238,77,43,1);
+    font-family:Open Sans;
+	font-weight:600;
+	font-size:16px;
+    color: white; 
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 36px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button1:hover {
+    box-shadow: 0 2px 8px 0 rgba(238,77,43,0.5);
+}
+
+.button1:active {
+    background-color: rgba(200,38,20,1);
+    box-shadow: 0 0px 0px 0 rgba(238,77,43,0.5);
+}
+
+.gird{
+	height: 234px;
+	background: rgba(238,77,43,0.15);
+	float:left;
+}
+.gird:hover {
+    background: rgba(238,77,43,0.3);
+}
+
+.girdspace{
+	height: 234px;
+	width: 36px;
+	background: white;
+	float:left;
+}
+
+
+	</style>
+
+</head>
+
+<body style="padding: 0px;margin: 0px; ">
+
+	<div style ="height: 65px;width : 100%;position: fixed;background-color: white;border-bottom:1px solid #eee;">
+    
+        <div class = "pagewidth">
+
+	        <ul>
+
+            <img src="resource/logo.png" alt="Paris" style ="height: 36px;width: 102px; padding-top: 12px;">
+            <li><a><button class="button button1">Button</button></a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="text.html">Text</a></li>
+            <li><a href="index.html" style="color: rgba(238,77,43,1);">Grid layout</a></li>
+           
+            </ul>
+        </div>
+    </div>
+
+    <div style ="height: 65px;width : 100%"></div>
+
+    <div class="banner" style="background-image: url('resource/sitebanner.png');height: 720px;">
+
+        <div id="grad1" style="padding-top: 360px">
+		 	<div class = "pagewidth" >
+		         <div style="margin: 0px auto;width: 960px;text-align: center;padding-top: 100px;">
+		         <p class = "headline1" style="color: white;font-weight: 700;">SHOPEE BRAND WEBSITE</p> 
+		         <p class = "headline1" style="color: white;font-weight: 700;">DESIGN DEFINITION</p> 
+		         </div>
+		    </div>
+	    </div>
+
+    </div>
+
+    <div class = "pagewidth" style="margin-top: 80px">
+
+		<p class = "title1" style="margin: 0px auto;text-align: center;width: 1044px;">Grid System</p> 
+
+		<p class = "content" style="margin: 0px auto;margin-top: 16px;text-align: center;width: 1044px;">
+			Our website content layout follows a grid system with a maximum width of 1260px. If there are cards and images, they are arranged and sized as shown in the figure below. Exceptions: 1. If there are more than four elements in a row, then you can decide their layout individually. 2. Some buttons will be wider than the maximum width of the content. 3. banners are not limited by the maximum width.
+		</p>
+
+		<div style="width:1260px;height: 234px;padding-top: 48px;" >
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 72px;" ></div>
+		</div>
+
+		<div style="width:1260px;height: 234px;padding-top: 48px;" >
+			<div class = "gird" style="width: 612px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 612px;" ></div>
+		</div>
+
+		<div style="width:1260px;height: 234px;padding-top: 48px;" >
+			<div class = "gird" style="width: 396px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 396px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 396px;" ></div>
+		</div>
+
+		<div style="width:1260px;height: 234px;padding-top: 48px;" >
+			<div class = "gird" style="width: 288px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 288px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 288px;" ></div>
+			<div class = "girdspace"></div>
+			<div class = "gird" style="width: 288px;" ></div>
+		</div>
+
+	</div>
+
+    <div class="banner" style="background-image: url('resource/banner.png');height: 720px;margin-top: 80px;">
+        <div id="grad1" style="padding-top: 360px">
+		 	<div class = "pagewidth" >
+		         <div style="margin: 0px auto;text-align: center;width: 1044px;padding-top: 190px;">
+		         <p class = "headline1" style="color: white">Big Banner Response</p> 
+		         </div>
+		    </div>
+	    </div>
+
+    </div>
+
+
+	
+
+	<div class = "pagewidth" style="margin-top: 80px">
+
+		<p class = "title1" style="margin: 0px auto;text-align: center;width: 1044px;">Big Banner Response</p> 
+
+		<p class = "content" style="margin: 0px auto;margin-top: 16px;text-align: center;width: 1044px;">
+			We wanted the banner to be huge and to define the atmosphere of the site. the banner is actually an outer frame with the image inside. the banner is always 100% browser width with a fixed height. As for the image, it always fits on the largest border and cannot be squeezed out of shape.
+		</p>
+
+		<div class = "sitesection" style="height: 192px;" >
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.banner<br>
+		            {<br>
+		            	height: 720px;<br>
+			            width: 100%;<br>
+			            min-width: 1440px;<br>
+			            background-position:center;<br>
+                        background-size: cover;<br>
+                        background-image:<br>
+		                url('banner.png');<br>
+                    }
+			</p> 
+			</div>
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.shadow<br>
+		            {<br>
+		            	height: 50%;<br>
+		            	width: 100%;<br>
+		            	padding-top: 360px<br>
+                        background-image:<br>
+                        linear-gradient<br>
+                        (to bottom,<br>
+                        rgba(0,0,0,0), rgba(0,0,0,0.4));<br>
+                    }
+				</p>
+			</div>
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.text<br>
+					    class = "headline1"<br>
+					{<br>
+						color: white;<br>
+					}
+				</p>
+			</div>
+
+			<div class="siteline"></div>
+
+			<p class = "smalltext">03.2021</p> 
+
+		</div>
+</div>
+		<div class="banner" style="background-image: url('resource/banner.png');height: 480px;margin-top: 80px;">
+
+        <div id="grad1" style="padding-top: 240px;">
+		 	<div class = "pagewidth" >
+		         <div style="margin: 0px auto;width: 1044px;padding-top: 100px;text-align: center;">
+		         <p class = "headline2" style="color: white">Sub Banner Response</p> 
+		         </div>
+		    </div>
+	    </div>
+
+    </div>
+
+
+	
+
+	<div class = "pagewidth" style="margin-top: 80px">
+
+		<p class = "title1" style="margin: 0px auto;text-align: center;width: 1044px;">Sub Banner Response</p> 
+
+		<p class = "content" style="margin: 0px auto;margin-top: 16px;text-align: center;width: 1044px;">
+			We wanted the banner to be huge and to define the atmosphere of the site. the banner is actually an outer frame with the image inside. the banner is always 100% browser width with a fixed height. As for the image, it always fits on the largest border and cannot be squeezed out of shape.
+		</p>
+
+		<div class = "sitesection" style="height: 192px;" >
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.banner<br>
+		            {<br>
+		            	height: 480px;<br>
+			            width: 100%;<br>
+			            min-width: 1440px;<br>
+			            background-position:center;<br>
+                        background-size: cover;<br>
+                        background-image:<br>
+		                url('banner.png');<br>
+                    }
+			</p> 
+			</div>
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.shadow<br>
+		            {<br>
+		            	height: 50%;<br>
+		            	width: 100%;<br>
+		            	padding-top: 240px<br>
+                        background-image:<br>
+                        linear-gradient<br>
+                        (to bottom,<br>
+                        rgba(0,0,0,0), rgba(0,0,0,0.4));<br>
+                    }
+				</p>
+			</div>
+
+			<div style="width:33.3%;height: 180px;float:left;">
+				<p class = "codetext">
+					.text<br>
+					    class = "headline2"<br>
+					{<br>
+						color: white;<br>
+					}
+				</p>
+			</div>
+
+			<div class="siteline"></div>
+
+			<p class = "smalltext">03.2021</p> 
+
+		</div>
+
+    <div style="height: 200px;"></div>
+
+    </div>
+
+
+</body>
+</html>
